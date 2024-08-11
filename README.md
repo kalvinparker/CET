@@ -12,3 +12,11 @@ A tool to extract CVE IDs from a webpage, and lists the results as a list. Also 
 5. As a Python script, I want to calculate the number of duplicate CVE IDs found, so that I can assess the data quality and identify potential issues.
 
 6. As a Python script, I want to generate a summary report of unique CVE counts vs duplicates and total them all up, so that I can analyse the CVE data effectively.
+
+## Running the Application:
+
+Save the code as app.py and templates/index.html in the same directory.
+Open a terminal in that directory and run python app.py.
+Access http://localhost:5000/ in your web browser.
+Paste your CVE data into the text area and click "Analyze".
+The application will display the analysis report and list of unique CVEs.
