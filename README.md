@@ -20,3 +20,20 @@ Open a terminal in that directory and run python app.py.
 Access http://localhost:5000/ in your web browser.
 Paste your CVE data into the text area and click "Analyze".
 The application will display the analysis report and list of unique CVEs.
+
+1. app.py:
+
+* Imports necessary libraries (Flask, re, Counter).
+* Defines the process_cve_data function (unchanged from your script).
+* Creates a Flask app instance.
+* Defines a route (/) for the homepage.
+** If the request method is POST (form submission), it retrieves the pasted text from the form.
+** Calls process_cve_data to analyze the text and stores the results.
+* Renders the index.html template, passing the retrieved text, report, and unique CVE list.
+templates/index.html:
+
+2. Basic HTML structure for the webpage.
+* A form with a text area for pasting CVE data.
+* Conditional rendering based on the existence of a report:
+** Displays the report in a preformatted block.
+** Lists unique CVEs in an unordered list.
